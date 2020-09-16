@@ -4,8 +4,8 @@
 
 ## Objectives
 
-- explain the four principles of the 'this' keyword and demonstrate each explanation with an example of their uses
-- describe, and use prototypes, constructor functions the new keyword, and pseudo-classical inheritance to build objects
+- explain the four principles of the 'this' keyword and demonstrate each explanation with an example of their uses.
+- describe, and use prototypes, constructor functions the new keyword, and pseudo-classical inheritance to build objects.
 
 ## Introduction
 
@@ -18,7 +18,7 @@ In order to complete these tasks you will need your newly aquired knowledge of c
 Two options are included below.
 
 <details>
-  <summary>1. Using Code Sandbox</summary>
+  <summary>[x] Using Code Sandbox</summary>
 
   * Launch the sandbox using the link below.
   * Sign into Code Sandbox.
@@ -32,7 +32,7 @@ Two options are included below.
 </details>
 
 <details>
-  <summary>2. Using VSCode and the Command Line</summary>
+  <summary>[ ] Using VSCode and the Command Line</summary>
 
   1. Fork repo and add TL as collaborator on Github.
   1. Clone _your_ fork (not Lambda's repo by mistake!).
@@ -51,11 +51,9 @@ Two options are included below.
 Find the file `index.js` and complete tasks 1, 2 and 3 until all of your tests pass.
 There is an additional task 4 which requires written explanations and has no tests.
 
-If you run into trouble while coding, fight the good fight for 20 minutes and then get on the help channel. __Remember to formulate your help request in a professional manner__ - like you would at the job - by including error messages, screenshots, and any other pertinent information about the problem, as well as what things you have attempted already while trying to solve it.
-
 ### Task 2b - Exit Ticket
 
-Once you begin, you will have 15 minutes to answer the questions [here](https://app.codesignal.com/public-test/bvaz9NW52Asuc8DGZ/LK7SEZ9FcLpjgj).
+Once you begin, you will have 15 minutes to answer the questions [x] [here](https://app.codesignal.com/public-test/bvaz9NW52Asuc8DGZ/LK7SEZ9FcLpjgj).
 
 The completion of these questions is mandatory for MVP. However, passing the quiz doesn't affect your standing as a Lambda School student whatsoever. This is Lambda School testing itself! Please answer honestly and to the best of your ability without using external references.
 
@@ -67,6 +65,6 @@ There are stretch goals found throughout `index.js`. Do not start work on these 
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [x] Add your team lead as a reviewer on the pull-request
+- [x] Your team lead will count the project as complete by merging the branch back into master.
