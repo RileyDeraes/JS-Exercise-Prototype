@@ -119,9 +119,9 @@ Baby.prototype.play = function() {
       - Apply will also immediately invoke the function, but we pass arguments as an array.
       - Bind will not immediately invoke the function, instead it returns a new function that can be invoked later. We also pass the arguments one by one.
 
-  3. Window Binding: The value of "This" will be the console object.
+  3. New Binding: When using the new keyword, constructs a new object and "this" points to that specific object. When it is invoked, "this" will point to the new object that was created.
 
-  4. New Binding: When using the new keyword, constructs a new object and "this" points to that specific object. When it is invoked, "this" will point to the new object that was created.
+  4. Window Binding: The value of "This" will be the console object. (This should never be used.)
 
 */
 
