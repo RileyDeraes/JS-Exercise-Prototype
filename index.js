@@ -114,7 +114,10 @@ Baby.prototype.play = function() {
 
   1. Implicit Binding: This only applies to objects with methods. When it is invoked, it will look to the left of the dot. That's what "This" refers to.
 
-  2. Explicit Binding: Referrences to a Constructor (Which starts with a capital letter).
+  2. Explicit Binding:
+      - Call will immediately invoke the function and pass arguments one by one.
+      - Apply will also immediately invoke the function, but we pass arguments as an array.
+      - Bind will not immediately invoke the function, instead it returns a new function that can be invoked later. We also pass the arguments one by one.
   3. 
   4. 
 */
