@@ -1,11 +1,9 @@
-/*
-  EXAMPLE TASK:
+/* EXAMPLE TASK:
     - Write an Airplane constructor that initializes `name` from an argument.
     - All airplanes built with Airplane should initialize with an `isFlying` of false.
     - Give airplanes the ability to `.takeOff()` and `.land()`:
         + If a plane takes off, its `isFlying` property is set to true.
-        + If a plane lands, its `isFlying` property is set to false.
-*/
+        + If a plane lands, its `isFlying` property is set to false. */
 
 // EXAMPLE SOLUTION CODE:
 function Airplane(name) {
@@ -20,14 +18,9 @@ Airplane.prototype.land = function () {
 };
 
 
-/*
-// 👇 COMPLETE YOUR WORK BELOW 👇
-// 👇 COMPLETE YOUR WORK BELOW 👇
-// 👇 COMPLETE YOUR WORK BELOW 👇
-*/
+/* 👇 COMPLETE YOUR WORK BELOW 👇 */
 
-/*
-  TASK 1
+/* TASK 1
     - Write a Person Constructor that initializes `name` and `age` from arguments.
     - All instances of Person should initialize with an empty `stomach` array.
     - Give instances of Person the ability to `.eat("someFood")`:
@@ -36,8 +29,7 @@ Airplane.prototype.land = function () {
     - Give instances of Person the ability to `.poop()`:
         + When an instance poops, its `stomach` should empty.
     - Give instances of Person a method `.toString()`:
-        + It should return a string with `name` and `age`. Example: "Mary, 50"
-*/
+        + It should return a string with `name` and `age`. Example: "Mary, 50" */
 
 function Person(name, age) {
   this.name = name;
@@ -46,21 +38,20 @@ function Person(name, age) {
 }
 
 Person.prototype.eat = function(someFood) {
-  if (this.stomach.length < 10) {
+  if (this.stomach.length < 10) { //We only want more food if his stomach isn't "full".
     this.stomach.push(someFood);
   }
 };
 
 Person.prototype.poop = function() {
-  this.stomach.length = 0;
+  this.stomach.length = 0; //Now his stomach is empty again. The example returned an empty array, but I prefer this.
 };
 
 Person.prototype.toString = function() {
-  return `${this.name}, ${this.age}`
+  return `${this.name}, ${this.age}` //Just shows the name and age.
 };
 
-/*
-  TASK 2
+/* TASK 2
     - Write a Car constructor that initializes `model` and `milesPerGallon` from arguments.
     - All instances built with Car:
         + should initialize with an `tank` at 0
@@ -70,8 +61,7 @@ Person.prototype.toString = function() {
         + Should cause the `odometer` to go up.
         + Should cause the the `tank` to go down taking `milesPerGallon` into account.
     - STRETCH: A car which runs out of `fuel` while driving can't drive any more distance:
-        + The `drive` method should return a string "I ran out of fuel at x miles!" x being `odometer`.
-*/
+        + The `drive` method should return a string "I ran out of fuel at x miles!" x being `odometer`. */
 
 function Car(model, milesPerGallon) {
   this.model = model;
@@ -81,53 +71,45 @@ function Car(model, milesPerGallon) {
 };
 
 Car.prototype.fill = function(gallons) {
-  this.tank += gallons;
+  this.tank += gallons; //Adds the gallons to the tank.
 };
 
 Car.prototype.drive = function(distance) {
-  this.odometer += distance;
+  this.odometer += distance; //Adds the distance to the odometer.
 };
 
-/*
-  TASK 3
+/* TASK 3
     - Write a Baby constructor subclassing Person.
     - Besides `name` and `age`, Baby takes a third argument to initialize `favoriteToy`.
     - Besides the methods on Person.prototype, babies have the ability to `.play()`:
-        + Should return a string "Playing with x", x being the favorite toy.
-*/
+        + Should return a string "Playing with x", x being the favorite toy. */
+
 function Baby(name, age, favoriteToy) {
   this.name = name;
   this.age = age;
   this.favoriteToy = favoriteToy;
 };
 
-Baby.prototype = Object.create(Person.prototype);
+Baby.prototype = Object.create(Person.prototype); //Yay constructors!
 
 Baby.prototype.play = function() {
-  return `Playing with ${this.favoriteToy}`;
+  return `Playing with ${this.favoriteToy}`; //Returns the fun 🎉
 };
 
-/* 
-  TASK 4
-
+/* TASK 4
   In your own words explain the four principles for the "this" keyword below:
 
   1. Implicit Binding: This only applies to objects with methods. When it is invoked, it will look to the left of the dot. That's what "This" refers to.
 
   2. Explicit Binding:
       - Call will immediately invoke the function and pass arguments one by one.
-      - Apply will also immediately invoke the function, but we pass arguments as an array.
+      - Apply will also immediately invoke the function, but will pass arguments as an array.
       - Bind will not immediately invoke the function, instead it returns a new function that can be invoked later. We also pass the arguments one by one.
 
-  3. New Binding: When using the new keyword, constructs a new object and "this" points to that specific object. When it is invoked, "this" will point to the new object that was created.
+  3. New Binding: When using the "new" keyword, constructs a new object and "this" points to that specific object. When it is invoked, "this" will point to the new object that was created.
 
-  4. Window Binding: The value of "This" will be the console object. (This should never be used.)
+  4. Window Binding: The value of "This" will be the console object. (This should never be used.) */
 
-*/
-
-
-///////// END OF CHALLENGE /////////
-///////// END OF CHALLENGE /////////
 ///////// END OF CHALLENGE /////////
 if (typeof exports !== 'undefined') {
   module.exports = module.exports || {}
